@@ -1,4 +1,4 @@
-import torch
+
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from PIL import Image
 import numpy as np

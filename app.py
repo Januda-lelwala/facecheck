@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import numpy as np
 from scipy.spatial.distance import cosine
 import facecheck
+import uvicorn
 
 app = Flask(__name__)
 extract_embedding = facecheck.extract_embedding
@@ -40,5 +41,9 @@ def recognize():
     else:
         return jsonify({"status": "success", "name": "Unknown"})
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=6000)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=8000)
+
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="0.0.0.1", port=5000, log_level="info")

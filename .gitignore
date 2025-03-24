@@ -1,0 +1,14 @@
+# Ignore dataset directories
+hdataset
+
+# Ignore model directories
+facecheck3.ipynb
+facecheckertest.ipynb
+facecheckertest2.ipynb
+faceclassifier.py
+# Ignore test images
+test.jpeg
+test2.jpeg
+test3.jpeg
+test4.jpeg
+test5.jpeg
