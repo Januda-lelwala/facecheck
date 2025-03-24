@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ## Usage
 To use the facecheck tool, run the following command:
 ```bash
-python facecheck.py --image <path_to_image>
+python facecheck.py --recognize_person <path_to_image>
 ```
 
 ## Contributing
